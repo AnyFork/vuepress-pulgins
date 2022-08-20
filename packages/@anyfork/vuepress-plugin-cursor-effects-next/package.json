@@ -1,6 +1,6 @@
 {
   "name": "@anyfork/vuepress-plugin-cursor-effects-next",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Mouse click effect plugin for vuepress v2.x",
   "main": "lib/node/index.js",
   "types": "lib/node/index.d.ts",
@@ -15,10 +15,10 @@
   },
   "license": "MIT",
   "author": "anyfork",
-  "homepage": "https://github.com/AnyFork/vuepress-plugin-cursor-effects-next.git",
+  "homepage": "https://github.com/AnyFork/vuepress-pulgins/tree/2.X/packages/%40anyfork/vuepress-plugin-cursor-effects-next",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AnyFork/vuepress-plugin-cursor-effects-next.git"
+    "url": "git+https://github.com/AnyFork/vuepress-pulgins.git"
   },
   "publishConfig": {
     "access": "public"

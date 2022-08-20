@@ -1,6 +1,6 @@
 {
   "name": "@anyfork/vuepress-plugin-bgm-player-next",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "bgm player plugin for vuepress v2.x",
   "main": "lib/node/index.js",
   "types": "lib/node/index.d.ts",
@@ -15,10 +15,10 @@
   },
   "license": "MIT",
   "author": "anyfork",
-  "homepage": "https://github.com/AnyFork/vuepress-plugin-bgm-player-next.git",
+  "homepage": "https://github.com/AnyFork/vuepress-pulgins/tree/2.X/packages/%40anyfork/vuepress-plugin-bgm-player-next",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AnyFork/vuepress-plugin-bgm-player-next.git"
+    "url": "git+https://github.com/AnyFork/vuepress-pulgins.git"
   },
   "publishConfig": {
     "access": "public"

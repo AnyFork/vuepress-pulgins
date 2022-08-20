@@ -1,6 +1,6 @@
 {
   "name": "@anyfork/vuepress-plugin-sakura-next",
-  "version": "0.1.0-beta.4",
+  "version": "0.1.2",
   "description": "vuepress plugin sakura for vuepress v2.x",
   "main": "lib/node/index.js",
   "types": "lib/node/index.d.ts",
@@ -15,10 +15,10 @@
   },
   "license": "MIT",
   "author": "anyfork",
-  "homepage": "https://github.com/AnyFork/vuepress-plugin-cursor-effects-next.git",
+  "homepage": "https://github.com/AnyFork/vuepress-pulgins/tree/2.X/packages/%40anyfork/vuepress-plugin-sakura-next",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AnyFork/vuepress-plugin-cursor-effects-next.git"
+    "url": "git+https://github.com/AnyFork/vuepress-pulgins.git"
   },
   "publishConfig": {
     "access": "public"
