@@ -287,6 +287,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: #3eaf7c !important;
   }
   .reco-bgm-panel .reco-bgm-box .reco-bgm-info .info-box {
     height: 21px;

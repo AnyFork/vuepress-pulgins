@@ -1,4 +1,4 @@
-# vuepress-pluin-bgm-player-next
+# vuepress-plugin-bgm-player-next
 
 > bgm player plugin for vuepress v2.x
 
