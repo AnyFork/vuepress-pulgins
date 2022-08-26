@@ -1,6 +1,6 @@
 {
   "name": "@anyfork/vuepress-plugin-loading-page-next",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "vuepress plugin loading page for vuepress v2.x",
   "main": "lib/node/index.js",
   "types": "lib/node/index.d.ts",

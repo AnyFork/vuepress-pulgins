@@ -1,9 +1,9 @@
 import { defineClientConfig } from '@vuepress/client'
-import DynamicTitle from './components/DynamicTitle.vue'
+import FunnyTitle from './components/FunnyTitle.vue'
 
 export default defineClientConfig({
   enhance({ app }) {
-    app.component(DynamicTitle.name, DynamicTitle)
+    app.component('FunnyTitle', FunnyTitle)
   },
-  rootComponents: [DynamicTitle]
+  rootComponents: [FunnyTitle]
 })

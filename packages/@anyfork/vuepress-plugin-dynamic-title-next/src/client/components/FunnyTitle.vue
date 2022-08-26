@@ -1,8 +1,9 @@
-<template></template>
-
+<template>
+  <div class="FunnyTitle"></div>
+</template>
 <script>
   export default {
-    name: 'DynamicTitle',
+    name: 'FunnyTitle',
     data() {
       return {
         originTitle: '',

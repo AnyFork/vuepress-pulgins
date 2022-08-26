@@ -1,5 +1,5 @@
 import { defineClientConfig } from '@vuepress/client'
-import loadingPage from './components/loadingPage.vue'
+import loadingPage from './components/LoadingPage.vue'
 
 export default defineClientConfig({
   enhance({ app }) {

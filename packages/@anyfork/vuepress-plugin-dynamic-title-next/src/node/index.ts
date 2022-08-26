@@ -1,5 +1,5 @@
-import { dynamicTitle } from './dynamicTitle'
+import { dynamicTitle } from './funnyTitle'
 
-export * from './dynamicTitle'
+export * from './funnyTitle'
 
 export { dynamicTitle }
