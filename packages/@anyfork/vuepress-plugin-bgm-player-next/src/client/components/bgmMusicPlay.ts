@@ -1,12 +1,12 @@
-import { reactive, ref, watch } from 'vue'
+import { reactive, ref, watch, onMounted } from 'vue'
 import type { BgmMusicPlayerOptions } from '../../types/index'
 declare const BGM_MUSIC_PLAYER: BgmMusicPlayerOptions
-const InterVal = ref<number>()
+let InterVal: number
 // 歌曲封面的旋转角度
 const rotateVal = ref(0)
 const volumeKey = ref('reco-bgm-volume')
 const rotate = () => {
-  InterVal.value =window.setInterval(() => {
+  InterVal = window.setInterval(() => {
     const cover = document.querySelector('.reco-bgm-cover') as HTMLElement
     const btn = document.querySelector('.mini-operation') as HTMLElement
     const fm = document.querySelector('.falut-message') as HTMLElement
@@ -31,7 +31,7 @@ export const sessionItem = {
     sessionStorage.setItem(volumeKey.value, val)
   },
   getVolume(): string {
-    return sessionStorage.getItem(volumeKey.value) || '0'
+    return sessionStorage.getItem(volumeKey.value) || '0.3'
   },
   removeVolume() {
     sessionStorage.removeItem(volumeKey.value)
@@ -52,16 +52,21 @@ export const player = reactive({
   floatStyle: BGM_MUSIC_PLAYER.floatStyle,
   autoShrink: BGM_MUSIC_PLAYER.autoShrink,
   shrinkMode: BGM_MUSIC_PLAYER.shrinkMode,
-  color: BGM_MUSIC_PLAYER.color
+  color: BGM_MUSIC_PLAYER.color,
+  backgroundColor: "#fff"
 })
-// 监听播放开关(打开或关闭)
-export const playState = watch(
-  () => player.curPlayStatus,
-  (newVal, oldVal) => {
-    if (newVal === 'playing') {
-      rotate()
-    } else {
-      window.clearInterval(InterVal.value)
-    }
-  }
-)
+
+export const useBgmMusic = () => {
+  onMounted(() => {
+    // 监听播放开关(打开或关闭)
+    watch(
+      () => player.curPlayStatus,
+      (newVal, oldVal) => {
+        if (newVal === 'playing') {
+          rotate()
+        } else {
+          window.clearInterval(InterVal)
+        }
+      }, { immediate: true })
+  })
+}

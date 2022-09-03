@@ -59,15 +59,15 @@
 <script setup lang="ts">
   import ModuleTransition from './ModuleTransition.vue'
   import { ref, onMounted, Ref } from 'vue'
-  import { player, sessionItem, playState } from './bgmMusicPlay'
+  import { player, sessionItem, useBgmMusic } from './bgmMusicPlay'
   //播放器Audio Dom对象
   const bgm = ref(null) as Ref
   //音量vbar Dom对象
   const vbar = ref(null) as Ref
   //下一首
   const pbar = ref(null) as Ref
+  useBgmMusic()
   onMounted(() => {
-    playState()
     if (player.floatPosition === 'left') {
       player.floatStyle = {
         ...player.floatStyle,
