@@ -2,7 +2,9 @@
   <div id="loader-wrapper">
     <h3 class="title">{{ siteData.title || frontmatter.title }}</h3>
     <p class="description">{{ siteData.description || frontmatter.description }}</p>
-    <component :is="mode"></component>
+    <client-only>
+      <component :is="mode" :key="mode"></component>
+    </client-only>
   </div>
 </template>
 <script setup lang="ts">
